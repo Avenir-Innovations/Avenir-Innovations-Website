@@ -1,0 +1,13 @@
+.canvas-container {
+  z-index: -10;
+}
+
+#canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#01061f1a, black);
+  background-color: black;
+}
