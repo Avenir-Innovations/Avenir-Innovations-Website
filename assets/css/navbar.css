@@ -15,8 +15,13 @@
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #121f31; 
+  background: #363636;
   box-shadow: 0 4px 10px -3px rgba(191, 191, 191, 0.5);
+}
+
+#header .logo .img-fluid {
+  border: 3px solid #fff;
+  border-radius: 50%;
 }
 
 #header .logo h1 {

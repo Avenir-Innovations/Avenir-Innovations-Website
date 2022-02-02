@@ -93,11 +93,3 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
-.glow-blue {
-  text-shadow: 0 0 10px #0052ff, 0 0 20px #0052ff, 0 0 30px #0052ff, 0 0 40px #0052ff, 0 0 70px #0052ff, 0 0 80px #0052ff, 0 0 100px #0052ff, 0 0 150px #0052ff !important;
-}
-
-.glow-white {
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0052ff, 0 0 70px #0052ff, 0 0 80px #0052ff, 0 0 100px #0052ff, 0 0 150px #0052ff;
-}
