@@ -92,12 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
 @media (max-width: 992px) {
   #header {
     height: 70px;
@@ -405,7 +399,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #aeaeae;
-  margin-bottom: 30px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
