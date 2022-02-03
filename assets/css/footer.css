@@ -2,43 +2,171 @@
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #001D3A;
+  background: #262626;
   color: #fff;
   font-size: 14px;
-  text-align: center;
-  padding: 30px 0;
+  position: relative;
 }
 
-#footer h3 {
+#footer .footer-top {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#footer .footer-top .footer-logo img {
+  height: 80px;
+}
+
+#footer .footer-top h3 {
   font-size: 36px;
   font-weight: 700;
   color: #fff;
   position: relative;
   font-family: "Poppins", sans-serif;
-  padding: 0;
-  margin: 0 0 15px 0;
+  padding: 30px 0 0 0;
+  margin-bottom: 0;
 }
 
-#footer p {
+#footer .footer-top p {
   font-size: 15;
-  font-style: italic;
+  margin: 0 0 0 0;
   padding: 0;
-  margin: 0 0 20px 0;
+}
+
+#footer .footer-top .footer-newsletter {
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#footer .footer-top .footer-newsletter form {
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #7cc576;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: #5ab652;
+}
+
+#footer .footer-top .social-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #footer .copyright {
-  margin: 20px 0 5px 0;
+  text-align: center;
 }
 
 #footer .credits {
+  text-align: center;
   font-size: 13px;
+  padding-top: 5px;
 }
 
-.fal, .far, .fas {
+#footer .icon-button {
+  margin-bottom: 10px;
+}
+
+#footer .icon-button i {
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 1px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+  margin-bottom: 10px;
+  transition: 0.2s ease-in;
+  color: white;
+  border: 2px solid #003387;
+}
+
+.fal,
+.far,
+.fas {
   font-family: "Font Awesome 5 Pro" !important;
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands" !important;
   font-weight: 400;
+}
+
+#footer .facebook i {
+  background-color: #3b5998;
+}
+
+#footer .linkedin i {
+  background-color: #0e76a8;
+}
+
+#footer .github i {
+  background-color: #333;
+}
+
+#footer .envelope i {
+  background-color: #ea4335;
+}
+
+#footer .twitter i {
+  background-color: #1da1f2;
+}
+
+#footer .instagram i {
+  background-color: #c13584;
+}
+
+#footer .discord i {
+  background-color: #7289da;
+}
+
+/* Hover Transition */
+#footer .twitter i:hover,
+#footer .envelope i:hover,
+#footer .gitlab i:hover,
+#footer .github i:hover,
+#footer .linkedin i:hover,
+#footer .facebook i:hover,
+#footer .instagram i:hover,
+#footer .stack-overflow i:hover,
+#footer .medium i:hover,
+#footer .discord i:hover {
+  background-color: #222222;
+  color: #a0d2db;
+  transform: translateY(-2px);
 }
