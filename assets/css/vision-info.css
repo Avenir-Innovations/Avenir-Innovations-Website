@@ -1,3 +1,10 @@
 .vision-info {
   font-size: 30px !important;
+  font-weight: 550 !important;
+  padding: 0 15% !important;
+}
+
+.text-emphasis {
+    font-weight: 900 !important;
+    font-style: italic !important;
 }
