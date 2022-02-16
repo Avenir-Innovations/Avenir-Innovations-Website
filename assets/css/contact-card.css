@@ -1,0 +1,306 @@
+/*
+.project-teams {
+  font-family: 'Jost', sans-serif;
+}
+*/
+
+.team-name {
+    font-size: 200%;
+  }
+  
+  @media (min-width: 425px) {
+    .team-name {
+      font-size: 300%;
+    }
+  }
+  @media (min-width: 768px) {
+    .team-name {
+      font-size: 400%;
+    }
+  }
+  
+  .socialCardDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.1rem 0.15rem;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .SocialCard {
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+    height: 250px;
+    background-color: #222222;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .SocialCard {
+      justify-self: center;
+    }
+  }
+  
+  .SocialCard .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(216, 171, 76);
+    /*
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    */
+    font-weight: 700;
+    font-size: 25px;
+  }
+  
+  .SocialCard .text {
+    width: 80%;
+    text-align: center;
+    color: #868e96;
+    font-weight: 500;
+    height: fit-content;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    /*
+    font-weight: 200;
+    letter-spacing: 2px;
+    */
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .SocialCard:hover {
+    height: 270px;
+  }
+  
+  .SocialCard:hover .info {
+    height: 90%;
+  }
+  
+  .SocialCard:hover .text {
+    transition: all 0.3s ease;
+    opacity: 1;
+    max-height: 40px;
+  }
+  
+  .SocialCard:hover .svgicon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+  }
+  
+  .SocialCard:hover .svgicon i {
+    background: linear-gradient(90deg, #00b8ff, #00719c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .svgicon.instagram {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #e56969 0%, #c1558b 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  .SocialCard:hover .svgicon i.fa-instagram {
+    background: linear-gradient(90deg, #e56969, #c1558b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .svgicon.discord {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #7289da 0%, #7289da 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  .SocialCard:hover .svgicon i.fa-discord {
+    background: linear-gradient(90deg, #7289da, #7289da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .svgicon.github {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, black 0%, black 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  .SocialCard:hover .svgicon i.fa-github {
+    background: linear-gradient(90deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  .svgicon.envelope {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #B23121 0%, #D44638 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  .SocialCard:hover .svgicon i.fa-envelope {
+    background: linear-gradient(90deg, #B23121, #D44638);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  .svgicon.linkedin {
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    background: linear-gradient(90deg, #0077B5 0%, #00A0DC 40%, rgba(0, 0, 0, 0.28) 60%);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+  }
+  .SocialCard:hover .svgicon i.fa-linkedin {
+    background: linear-gradient(90deg, #0077B5, #00A0DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile */
+  .social-media-div {
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .social-media-div a {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: fit-content;
+  }
+  
+  .icon-button {
+    margin-bottom: 10px;
+  }
+  
+  .icon-button i {
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 1px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in;
+    color: white;
+    border: 2px solid #D8AB4C;
+  }
+  
+  .email-mobile i {
+    background-color: #B23121;
+  }
+  
+  .linkedin-mobile i {
+    background-color: #0e76a8;
+  }
+  
+  .github-mobile i {
+    background-color: #333;
+  }
+  
+  .instagram-mobile i {
+    background-color: #c13584;
+  }
+  .discord-mobile i{
+    background-color: #7289da;
+  }
+  /* Hover Transition */
+  .email-mobile i:hover,
+  .discord-mobile i:hover,
+  .github-mobile i:hover,
+  .linkedin-mobile i:hover,
+  .instagram-mobile i:hover {
+    background-color:  #222222;
+    color: #D8AB4C;
+    transform: translateY(-2px);
+  }
+  
+  /* Media Query */
+  @media (max-width: 992px) {
+    .social-media-div {
+      text-align: center;
+    }
+  }
+  
