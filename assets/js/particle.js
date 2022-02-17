@@ -1,29 +1,29 @@
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-canvas.width = innerWidth;
-canvas.height = innerHeight;
+const constellation_canvas = document.getElementById('canvas');
+const constellation_ctx = constellation_canvas.getContext('2d');
+constellation_canvas.width = innerWidth;
+constellation_canvas.height = innerHeight;
 
 class Particle {
-  constructor (x, y, xv, yv, r) {
+  constructor(x, y, xv, yv, r) {
     this.x = x;
-    this.y = y;    
-    this.xv = xv;    
-    this.yv = yv;    
-    this.r = r;    
+    this.y = y;
+    this.xv = xv;
+    this.yv = yv;
+    this.r = r;
   }
-  update () {
+  update() {
     if (this.x < 0 + this.r) {
       this.x = 0 + this.r;
       this.xv = -this.xv;
-    } else if (this.x > canvas.width - this.r) {
-      this.x = canvas.width - this.r;
+    } else if (this.x > constellation_canvas.width - this.r) {
+      this.x = constellation_canvas.width - this.r;
       this.xv = -this.xv;
     }
     if (this.y < 0 + this.r) {
       this.y = 0 + this.r;
       this.yv = -this.yv;
-    } else if (this.y > canvas.height - this.r) {
-      this.y = canvas.height - this.r;
+    } else if (this.y > constellation_canvas.height - this.r) {
+      this.y = constellation_canvas.height - this.r;
       this.yv = -this.yv;
     }
     this.x += this.xv;
@@ -31,25 +31,25 @@ class Particle {
     this.draw();
   }
   draw() {
-    ctx.fillStyle = "#006992";
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
-    ctx.fill();
-    ctx.closePath();
+    constellation_ctx.fillStyle = "#fff";
+    constellation_ctx.beginPath();
+    constellation_ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
+    constellation_ctx.fill();
+    constellation_ctx.closePath();
   }
 }
 
-let num = canvas.width * canvas.height / 12000;
+let num = constellation_canvas.width * constellation_canvas.height / 12000;
 let pA = [];
 
 function init() {
   for (let i = 0; i < num; i++) {
-    const x = Math.random() * canvas.width;
-    const y = Math.random() * canvas.height;
+    const x = Math.random() * constellation_canvas.width;
+    const y = Math.random() * constellation_canvas.height;
     const xv = Math.random() * 4 - 2;
     const yv = Math.random() * 4 - 2;
-    const r = Math.random() * 2 + 2;
-    
+    const r = Math.random() * 3 + 2;
+
     pA.push(new Particle(x, y, xv, yv, r));
   }
 }
@@ -63,27 +63,27 @@ function connect() {
       const d = Math.sqrt(dx * dx + dy * dy);
       if (d < 100) {
         o = 1 - (d / 100);
-        ctx.strokeStyle = `rgba(0, 105, 146, ${o})`;
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
-        ctx.closePath();
-        ctx.stroke();
+        constellation_ctx.strokeStyle = `rgba(250, 250, 250, ${o})`;
+        constellation_ctx.lineWidth = 1;
+        constellation_ctx.beginPath();
+        constellation_ctx.moveTo(a.x, a.y);
+        constellation_ctx.lineTo(b.x, b.y);
+        constellation_ctx.closePath();
+        constellation_ctx.stroke();
       }
     }
   }
-}      
+}
 
 function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  
+  constellation_ctx.clearRect(0, 0, constellation_canvas.width, constellation_canvas.height);
+
   for (let i = 0; i < pA.length; i++) {
     pA[i].update();
   }
-  
+
   connect();
-  
+
   requestAnimationFrame(animate);
 }
 
@@ -91,9 +91,9 @@ init();
 requestAnimationFrame(animate);
 
 window.addEventListener('resize', function (e) {
-  canvas.width = innerWidth;
-  canvas.height = innerHeight;
+  constellation_canvas.width = innerWidth;
+  constellation_canvas.height = innerHeight;
   pA = [];
-  num = canvas.width * canvas.height / 9000;
+  num = constellation_canvas.width * constellation_canvas.height / 9000;
   init();
 });
