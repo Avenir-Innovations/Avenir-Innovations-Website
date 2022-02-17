@@ -154,6 +154,8 @@
 .slideshow .slide .carousel-btn::before {
   background: #fff;
 }
+.slideshow .slide .btn {
+}
 .slideshow .pagination {
   position: absolute;
   bottom: 35px;
@@ -224,4 +226,55 @@
   height: 26px;
   fill: #fff;
   transition: left 0.2s ease;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  font: 10px "Oswald", sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e1e1e1;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+.btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+.btn:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
 }
