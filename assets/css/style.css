@@ -381,26 +381,25 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
-#hero .hero-logo {
-  margin-bottom: 30px;
-}
-
 #hero .hero-logo img {
   border-radius: 50%;
 }
 
 #hero h1 {
-  margin: 0 0 30px 0;
+  margin: 0 0 1rem 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 #hero h2 {
-  color: #aeaeae;
+  margin: 0 0 1rem 0;
   font-size: 18px;
   font-weight: 700;
+  color: #aeaeae;
   text-transform: uppercase;
 }
 
@@ -409,33 +408,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 82.5%;
 }
 
-#hero .home-btn i {
-  color: #fff;
-  background-color: #001a9a;
-  padding: 10px;
-  border: #001a9a 1px solid;
-  border-radius: 50%;
-  font-size: 20px;
-}
-
-#hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 14px 30px;
-  border-radius: 3px;
-  margin: 10px;
-  color: #fff;
-  background: #0052ff;
-}
-
-#hero .btn-get-started:hover {
-  transition: 0.5s;
-  background: #fff;
-  color: #0052ff;
+#hero .hero-button {
+  text-decoration: none;
+  font-size: 3.5rem;
+  color: white;
+  z-index: 10;
 }
 
 @media (min-width: 1024px) {
