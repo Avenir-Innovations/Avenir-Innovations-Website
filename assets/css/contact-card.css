@@ -207,12 +207,12 @@
     opacity: 1;
     transition: all 0.3s ease;
   }
-  .svgicon.linkedin {
+  .svgicon.donation {
     margin: 0 auto;
     width: 100%;
     height: 80px;
     max-width: 80px;
-    background: linear-gradient(90deg, #0077B5 0%, #00A0DC 40%, rgba(0, 0, 0, 0.28) 60%);
+    background: linear-gradient(90deg, #1ed760 0%, #1ed760 40%, rgba(0, 0, 0, 0.28) 60%);
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -222,8 +222,8 @@
     background-position: 0px;
     background-size: 200px;
   }
-  .SocialCard:hover .svgicon i.fa-linkedin {
-    background: linear-gradient(90deg, #0077B5, #00A0DC);
+  .SocialCard:hover .svgicon i.fa-donation {
+    background: linear-gradient(90deg, #1ed760, #1ed760);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 1;
