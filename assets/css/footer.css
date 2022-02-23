@@ -163,6 +163,10 @@
   background-color: #7289da;
 }
 
+#footer .donations i {
+  background-color: #1ed760;
+}
+
 /* Hover Transition */
 #footer .twitter i:hover,
 #footer .envelope i:hover,
@@ -173,7 +177,8 @@
 #footer .instagram i:hover,
 #footer .stack-overflow i:hover,
 #footer .medium i:hover,
-#footer .discord i:hover {
+#footer .discord i:hover,
+#footer .donations i:hover {
   background-color: #222222;
   color: #a0d2db;
   transform: translateY(-2px);
