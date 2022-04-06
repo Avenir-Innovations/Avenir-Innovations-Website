@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Meet the Team
+--------------------------------------------------------------*/
+#meet-team {
+  background: #101318;
+  padding: 0;
+
+}
+
+#meet-team h1 {
+  color: #ffd966;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.why-us a {
+  color: #520101;
+}
+
+.why-us .content {
+  padding: 30px 100px 0 100px;
+}
+
+.why-us .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: white;
+}
