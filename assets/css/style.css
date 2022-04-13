@@ -5,6 +5,13 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+.invisible {
+  visibility: hidden;
+  position: absolute;
+  top: -9999px;
+}
+
 body {
   color: black;
   background-color: #363636;
