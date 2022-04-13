@@ -1,35 +1,4 @@
 /*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 80px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background-color: whitesmoke;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 40px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  padding-bottom: 0;
-  color: #151515;
-}
-
-.section-title p {
-  margin-bottom: 0;
-  color: #aeaeae;
-}
-
-/*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
