@@ -1,35 +1,42 @@
 /*--------------------------------------------------------------
 # Meet the Team
 --------------------------------------------------------------*/
-#meet-team {
-  background: #101318;
+
+.meet-team .box {
   padding: 0;
-
-}
-
-#meet-team h1 {
-  color: #ffd966;
-  font-size: 3rem;
+  padding-bottom: 75%;
+  background-color: #434343;
+  background-image: url("../img/meet-team.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
-
-.why-us a {
-  color: #520101;
-}
-
-.why-us .content {
-  padding: 30px 100px 0 100px;
-}
-
-.why-us .content h3 {
+.meet-team .box h3 {
   font-weight: 400;
-  font-size: 34px;
-  color: white;
+  margin: 35px 0px 0px 35px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: -5px 14px 10px rgba(0,0,0,0.75), -5px 14px 2px rgba(0,0,0,0.1), -5px 14px 30px rgba(0,0,0,0.1);
+}
+
+.meet-team .subteam .subteam-info {
+  z-index: -3;
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.meet-team .subteam:hover .subteam-info {
+  transition: 0.3s;
+  position: absolute;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.4);
 }
