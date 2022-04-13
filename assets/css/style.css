@@ -156,7 +156,7 @@ section {
 }
 
 .section-bg {
-  background-color: whitesmoke;
+  background-color: #101318;
 }
 
 .section-title {
@@ -166,11 +166,18 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 0;
-  color: #151515;
+  color: #ffd966;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .section-title p {
