@@ -134,6 +134,10 @@
   touch-action: auto;
 }
 
+.gslide:not(.current) {
+  pointer-events: none;
+}
+
 .gslide-image {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -327,7 +331,7 @@
   width: 100%;
   background: transparent;
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
   padding: 19px 11px;
   max-width: 100vw !important;
   -webkit-box-ordinal-group: 3 !important;
@@ -482,6 +486,10 @@
   stroke: #fff;
 }
 
+.gbtn.focused {
+  outline: 2px solid #0f3d81;
+}
+
 iframe.wait-autoplay {
   opacity: 0;
 }
@@ -534,10 +542,6 @@ iframe.wait-autoplay {
 .glightbox-clean .gnext path,
 .glightbox-clean .gclose path {
   fill: #fff;
-}
-
-.glightbox-clean button:focus:not(.focused):not(.disabled) {
-  outline: none;
 }
 
 .glightbox-clean .gprev {
