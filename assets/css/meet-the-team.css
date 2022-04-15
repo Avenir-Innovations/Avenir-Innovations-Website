@@ -1,6 +1,15 @@
 /*--------------------------------------------------------------
 # Meet the Team
 --------------------------------------------------------------*/
+.meet-team .section-title {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  width: 100%;
+  background-image: url("../img/gradient.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .meet-team .box {
   padding: 0;
