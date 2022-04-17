@@ -19,6 +19,10 @@
   box-shadow: 0 4px 10px -3px rgba(191, 191, 191, 0.5);
 }
 
+.scrolled-offset {
+  margin-top: 70px;
+}
+
 #header .logo .img-fluid {
   border: 3px solid #fff;
   border-radius: 50%;
@@ -48,15 +52,8 @@
   #header {
     height: 70px;
   }
-}
-
-.scrolled-offset {
-  margin-top: 70px;
-}
-
-@media (max-width: 992px) {
   .scrolled-offset {
-    margin-top: 90px;
+    margin-top: 70px;
   }
 }
 
