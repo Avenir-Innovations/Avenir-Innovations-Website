@@ -51,6 +51,7 @@
   width: 100%;
   height: 100%;
 }
+
 .meet-team .box h3 {
   font-weight: 400;
   margin: 35px 0px 0px 35px;
@@ -82,6 +83,7 @@
   padding: 25px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 3.5rem;
 }
 
 .meet-team .department-director .director-image {
@@ -135,4 +137,70 @@
   padding-top: 0;
   padding-bottom: 0;
   letter-spacing: 0.1rem;
+}
+
+.meet-team .department-members {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.meet-team .department-members .member-title {
+  background-color: #434343;
+  padding: 20px 0px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #F6d264;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.meet-team .department-member {
+  background-color: #434343;
+  width: 20%;
+  
+}
+
+.meet-team .department-member .member-role {
+  background-color: #434343;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.meet-team .department-member .role-person {
+  background-color: #434343;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #F6d264;
+  letter-spacing: 0.1rem;
+}
+
+.meet-team .department-director .member-image {
+  background-image: url("../img/director.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.meet-team .department-director .member-image .member-picture  {
+  padding: 0;
+  margin: 0;
+  background-color: transparent !important;
+  width: 100% !important;
+}
+
+
+@media (max-width: 768px) {
+  .meet-team .department-member {
+    width: 100%;
+  }
 }
