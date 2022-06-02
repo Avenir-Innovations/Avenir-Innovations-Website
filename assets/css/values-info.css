@@ -32,8 +32,6 @@
 }
 
 .about-us .department-director {
-  background-color: #434343;
-  width: 90%;
   margin: 0 auto;
   padding: 25px;
   display: flex;
@@ -69,7 +67,7 @@
 .about-us .department-director .director-description h2 {
   font-size: 30px;
   font-weight: bolder;
-  color: #EFEFEF;
+  color: #ffd966;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;

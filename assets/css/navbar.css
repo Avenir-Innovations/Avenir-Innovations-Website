@@ -84,7 +84,6 @@
   font-size: 17px;
   color: #fff;
   font-weight: bold;
-  text-transform: uppercase;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -113,7 +112,6 @@
   opacity: 0;
   visibility: hidden;
   background: #17171D;
-  box-shadow: 0px 0px 30px rgba(23, 23, 29, 0.50);
   transition: 0.3s;
 }
 
@@ -282,7 +280,6 @@
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
 }
 
 .navbar-mobile .dropdown ul li {
