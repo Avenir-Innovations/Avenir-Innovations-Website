@@ -54,33 +54,34 @@
     <link href="assets/css/navbar.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/values-info.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/project-card.css">
 
   </head>
   <body>
-      <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <a href="index.html#"><img src="assets/img/logo.png" alt="Avenir Innovations logo" class="img-fluid"></a>
-          </div>
-          <nav id="navbar" class="navbar toggle-time">
-            <img src="assets/img/transparent.png" class="bg_overlay" alt="">
-            <ul>
-              <li><a class="d-block nav-link  text-uppercase" href="index.html#hero">Home</a></li>
-              <li class="dropdown">
-                <a class="d-block text-uppercase active"><i class="fal fa-angle-down align-middle"></i><span>About Us</span></a>
-                <ul>
-                  <li><a class="d-block nav-link text-uppercase active" href="our-mission.html">Our Mission</a></li>
-                  <li><a class="d-block nav-link text-uppercase" href="meet-the-team.html">Meet the Team</a></li>
-                </ul>
-              </li>
-              <li><a class="d-block nav-link text-uppercase" href="contact-us.html">Contact Us</a></li>
-            </ul>
-            <i class="fal fa-bars mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html#"><img src="assets/img/logo.png" alt="Avenir Innovations logo" class="img-fluid"></a>
         </div>
-      </header>
+        <nav id="navbar" class="navbar toggle-time">
+          <img src="assets/img/transparent.png" class="bg_overlay" alt="">
+          <ul>
+            <li><a class="d-block nav-link  text-uppercase" href="index.html#hero">Home</a></li>
+            <li class="dropdown">
+              <a class="d-block text-uppercase active"><i class="fal fa-angle-down align-middle"></i><span>About Us</span></a>
+              <ul>
+                <li><a class="d-block nav-link text-uppercase active" href="our-mission.html">Our Mission</a></li>
+                <li><a class="d-block nav-link text-uppercase" href="meet-the-team.html">Meet the Team</a></li>
+              </ul>
+            </li>
+            <li><a class="d-block nav-link text-uppercase" href="contact-us.html">Contact Us</a></li>
+          </ul>
+          <i class="fal fa-bars mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+      </div>
+    </header>
     <main id="main">
-      <section id="about-us" class="about-us section-bg pt-0">
+      <section id="about-us" class="about-us section-bg p-0">
         <div class="section-title">
           <h2 data-aos="fade-up">About Us</h2>
           <div class="container">
@@ -106,9 +107,47 @@
           </div>
           <div class="director-description col-lg-7 order-lg-1 pt-4 pt-lg-0 pl-0 pl-lg-3 px-0 px-lg-4" data-aos="fade-right" class="embed-responsive embed-responsive-16by9">
             <h2 class="member-title text-start">Project: Fox And The Hound</h2>
-            <p class="role-description" data-aos="fade-up">Our team has been tasked by the 2022 CARPA Initiative to design and build a semi-autonomous terrestrial quadrupedal robotics system, the HeistBOT, for espionage and stealth purposes.</p>
+            <p class="role-description" data-aos="fade-up">Our team has been tasked by the 2022 CARPA Initiative to design and build a semi-autonomous terrestrial quadrupedal robotics system, the HeistBOT, for espionage and stealth purposes. As requested by the CARPA Initative, the HeistBOT is capable of carrying out the stealth mission as both <span class="fst-italic">The Fox</span> and <span class="fst-italic"> The Hound</span> during different rounds of the mission.</p>
             <p class="role-description" data-aos="fade-up">Click here <i class="fas fa-arrow-right align-middle"></i> to watch an overview of our mission.</p>
           </div>
+        </div>
+        <div class="container-fluid project-card parent">
+          <div class="row mx-lg-4 d-flex justify-content-center" data-aos="fade-up">
+            <div class="col-12 col-lg-4 d-flex justify-content-center">
+              <a href="https://github.com/Avenir-Innovations/" style="text-decoration: none;" target="_blank">
+                <div class="card-container">
+                  <span class="Complete">Complete</span>
+                  <img class="icon" src="assets/img/logo.png" alt="user"/>
+                  <h3>HeistBOT</h3>
+                  <h6>Current Progress</h6>
+                  <ul class="activity-level d-flex align-self-center">
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li class="active"></li>
+                  </ul>
+                  <p class="px-3">The HeistBOT is a semi-autonomous terrestrial quadrupedal robotics system for espionage and stealth purposes.</p>
+                  <img class="d-lg-none img-fluid p-3 rounded" src="assets/img/project-thumbnail.png">
+                  <div class="buttons">
+                    <a class="primary-button" href="https://github.com/Avenir-Innovations/HeistBot" target="_blank">
+                      Learn More
+                    </a>
+                  </div>
+                  <div class="tags">
+                    <h6>Tags</h6>
+                    <ul>
+                      <li>Mission Deliverable</li>
+                    </ul>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-8 d-none d-lg-flex align-self-center justify-content-center">
+              <img class="img-fluid rounded" src="assets/img/project-thumbnail.png">
+            </div>
+          </div>
+        </div>        
         </div>
       </section>
       <!-- ======= Portfolio Section ======= -->
