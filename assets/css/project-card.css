@@ -66,7 +66,7 @@
 }
 
 .project-card .card-container {
-  background-color: #00415A;
+  background-color: #091684;
   border-radius: 25px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.35);
   transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
@@ -127,11 +127,10 @@
 }
 
 .project-card .card-container .icon {
-  border: 1px solid #121e82;
+  border: 3px solid #00ADEF;
   border-radius: 50%;
-  padding: 7px;
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
 }
 
 .project-card .primary-button {
