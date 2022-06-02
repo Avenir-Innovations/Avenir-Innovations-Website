@@ -1,3 +1,94 @@
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about-us .section-title {
+  padding: 30px 0px;
+  margin-bottom: 30px;
+  background-image: url("../img/gradient.png") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.about-us .section-title h2 {
+  font-size: 50px;
+}
+
+.about-us .section-title p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #d5d6e0;
+  text-align: center;
+  margin-top: 0; 
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about-us .section-title hr {
+  border: 1.5px solid #ffd966;
+  margin: 0 33%;
+}
+
+.about-us .department-director {
+  background-color: #434343;
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.about-us .department-director .director-image {
+  background-image: url("../img/director.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us .department-director .director-image .director-picture {
+  padding: 0;
+  margin: 0;
+  background-color: transparent !important;
+  max-width: 75%;
+}
+
+.about-us .department-director .director-description {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us .department-director .director-description h2 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #EFEFEF;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+}
+
+.about-us .department-director .director-description p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #F3F3f3;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  letter-spacing: 0.1rem;
+  margin-top: 15px;
+}
+
 .values-info {
   font-size: 30px !important;
   font-weight: 550 !important;
@@ -5,6 +96,6 @@
 }
 
 .text-emphasis {
-    font-weight: 900 !important;
-    font-style: italic !important;
+  font-weight: 900 !important;
+  font-style: italic !important;
 }
